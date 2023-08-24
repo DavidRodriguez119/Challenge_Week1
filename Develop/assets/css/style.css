@@ -1,132 +1,141 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
+/*Code that applies to the whole HTML file*/
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
 
-body {
-    background-color: #d9dcd6;
-}
+/*Code that applies to the whole body of the page*/
+    body {
+        background-color: #d9dcd6;
+    }
 
-header {
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
-    color: #ffffff;
-}
+/*CSS code that affects the header*/
+    header {
+        padding: 20px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-color: #2a607c;
+        color: #ffffff;
+    }
 
-h1 {
-    display: inline-block;
-    font-size: 48px;
-}
+    h1 {
+        display: inline-block;
+        font-size: 48px;
+    }
 
-.seo {
-    color: #d9dcd6;
-}
+    /*Refers to the letters within h1 that has a slightly different color*/
+    .seo { 
+        color: #d9dcd6; 
+    }
 
-#header_content{
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-}
+    /*The following ID refers to the top menu options*/
+    #header_content{
+        padding-top: 15px;
+        margin-right: 20px;
+        float: right;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+    }
 
-ul {
-    list-style-type: none;
-}
+/*CSS code that affects the <main> section*/
+    ul {
+        list-style-type: none;
+    }
 
-li {
-    display: inline-block;
-    margin-left: 25px;
-}
+    li {
+        display: inline-block;
+        margin-left: 25px;
+    }
 
-a {
-    color: #ffffff;
-    text-decoration: none;
-}
+    a {
+        color: #ffffff;
+        text-decoration: none;
+    }
 
-p {
-    font-size: 16px;
-}
+    p {
+        font-size: 16px;
+    }
 
-.main_picture {
-    height: 800px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
-    background-size: cover;
-    background-position: center;
-}
+    .main_picture {
+        height: 800px;
+        width: 100%;
+        margin-bottom: 25px;
+        background-image: url("../images/digital-marketing-meeting.jpg");
+        background-size: cover;
+        background-position: center;
+    }
 
-.content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
-}
+    /*content class is the section that shows the three mainservices provided by Horiseon*/
+    .content {
+        width: 75%;
+        display: inline-block;
+        margin-left: 20px;
+    }
+    /*content_item refers to each individual section that has one of the services provided by horiseon*/
+    .content_item {
+        margin-bottom: 20px;
+        padding: 50px;
+        height: 300px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: #0072bb;
+        color: #ffffff;
+    }
 
-.content_item {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
+    .content_item img {
+        max-height: 200px;
+    }
 
-.content_item img {
-    max-height: 200px;
-}
+    /*each float class locates the images within the content section*/
+    .float-left {
+        float: left;
+        margin-right: 25px;
+    }
+    .float-right {
+        float: right;
+        margin-left: 25px;
+    }
 
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
+    /*.benefits encloses the section that talks about Load Generation, Brand Awareness & Cost Management*/
+    .benefits {
+        margin-right: 20px;
+        padding: 20px;
+        clear: both;
+        float: right;
+        width: 20%;
+        height: 100%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: #2589bd;
+    }
 
-.float-right {
-    float: right;
-    margin-left: 25px;
-}
+    .benefits_item {
+        margin-bottom: 32px;
+        color: #ffffff;
+    }
 
-.benefits {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
-}
+    .benefits_item h3 {
+        margin-bottom: 10px;
+        text-align: center;
+    }
 
-.benefits_item {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
+    .benefits_item img {
+        display: block;
+        margin: 10px auto;
+        max-width: 150px;
+    }
 
-.benefits_item h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
+/*CSS code that affects the footer*/
+    footer {
+        padding: 30px;
+        clear: both;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: center;
+    }
 
-.benefits_item img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
+    #footer_title{
+        font-size: 20px;
+    }
 
-footer {
-    padding: 30px;
-    clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-}
-
-#footer_title{
-    font-size: 20px;
-}
-
-h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
+    h2 {
+        margin-bottom: 20px;
+        font-size: 36px;
+    }
